@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videcemo">
+    <meta name="author" content="Filip Cofi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="shortcut icon" href="http://www.iconj.com/ico/1/n/1nu3mycg0c.ico" type="image/x-icon" />
+    <title>Milos Teodosic</title>
+	<style>
+	*
+	{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	}
+	body
+	{
+	text-align: justify;
+	}
+	}
+	.cc:hover > .overlay1
+	{
+    visibility: visible;
+	cursor: pointer;
+	}
+	.tb1
+	{
+	background: url(img/b.jpg);
+	width: 260px;
+    height: 189px;
+    position: absolute;
+	border: 6px solid #e6b800;
+	float: right;
+	clear: right;
+	margin-right: 1%;
+	margin-left:37.5%;
+	}
+	.tr1:hover > .overlay
+	{
+    visibility: visible;
+	cursor: pointer;
+	}
+	.tr1
+	{
+	background: url(img/b.jpg);
+	width: 260px;
+    height: 189px;
+    position: relative;
+	border: 6px solid #e6b800;
+	margin-top: 15%;
+	margin-right: 1%;
+	margin-left:-2.5%;
+	float: left;
+	clear: right;
+	}
+	.kolina1:hover > .overlay {
+    visibility: visible;
+	cursor: pointer;
+	}
+	.kolina1
+	{
+	background: url(img/nj.jpg);
+	width: 520px;
+    height: 390px;
+    position: relative;
+	border: 6px solid #e6b800;
+	float: right;
+	clear: right;
+	margin-left:-0.3%;
+	}
+	.cc:hover > .overlay1
+	{
+    visibility: visible;
+	cursor: pointer;
+	}
+	.tb
+	{
+	background: url(img/b.jpg);
+	width: 260px;
+    height: 189px;
+    position: relative;
+	border: 6px solid #e6b800;
+	float: left;
+	clear: right;
+	margin-right: 1%;
+	margin-left:0;
+	}
+	.tr:hover > .overlay
+	{
+    visibility: visible;
+	cursor: pointer;
+	}
+	.tr
+	{
+	background: url(img/b.jpg);
+	width: 260px;
+    height: 189px;
+    position: relative;
+	border: 6px solid #e6b800;
+	margin-top: 15%;
+	margin-right: 1%;
+	margin-left:-2.5%;
+	float: left;
+	clear: right;
+	}
+	.overlay1
+	{
+	visibility: hidden;
+	width:100%;
+    height:100%;
+	margin-top:-18px;
+	position:absolute;
+    background-color: rgba(0, 0, 0, .5);
+    }
+	.overlay
+	{
+	visibility: hidden;
+	width:100%;
+    height:100%;
+    position:absolute;
+    background-color: rgba(0, 0, 0, .5);
+    }
+	.kolina:hover > .overlay {
+    visibility: visible;
+	cursor: pointer;
+	}
+	.kolina
+	{
+	background: url(img/nj.jpg);
+	width: 520px;
+    height: 390px;
+    position: relative;
+	border: 6px solid #e6b800;
+	float: left;
+	clear: right;
+	margin-left:-0.3%;
+	}
+	.buttons
+	{
+	color: transparent;
+	padding-left: 18px;
+	background-color: rgba(255, 255, 255, 0.4);
+	}
+	.buttons:hover
+	{
+	background-color: rgba(255, 255, 255, 0.7);
+	}
+	mark
+	{
+	color: black;
+	background-color: white;
+	border-radius: 6px;
+	}
+	#sch
+	{
+	position: absolute;
+	margin-top: 11.5px;
+	margin-left: -50px;
+	z-index: 1;
+	display: none;
+	}
+	#searchtext span 
+	{
+    background-color:#FF9;
+    color:#555;
+    }
+	ul li a:hover
+	{
+	border-bottom: 4px solid orange;
+	border-top: 4px solid orange;
+	}
+	ul 
+	{
+	list-style-type: none;	
+	overflow: hidden;
+	padding: 18px;	
+	padding-right: 5px;
+	width: 70%;
+	margin-top: 5px;
+	margin-left: 26%;
+	margin-right: 1px;
+	}
+	li
+	{
+	font-size: 105%;
+	font-family: navf;
+	display:inline-block;
+	}
+	a
+	{
+	text-decoration: none;
+	transition: 300ms ease-out;
+	padding-bottom: 9px;	
+	padding-top: 9px;
+	}
+	ul li
+	{
+	text-align: center;
+    color: white;
+	margin-right: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+	transition: 300ms ease-out;
+	}
+	div.dropdownmenu a 
+	{
+	font-family: navf;
+	font-size: 15px;
+	width:100%;
+	color: white;
+	opacity: 1;
+	text-decoration: none;
+	text-align: center;
+	border: 0;
+	}
+	.dropdownmenu
+	{
+	margin-top: 6.5px;
+	display: none;
+	position: absolute;
+	width: 200px;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	}
+	li.dropdown a:hover, div.dropdownmenu:hover .drm
+	{
+	border-top: 4px solid orange;
+	border-bottom: 0;
+	background-color:rgba(0,0,0,0.5)
+	}
+	div.dropdownmenu a:hover
+	{
+	border-top:0;
+	}
+	.dropdownmenu div:hover
+	{
+	background-color:rgba(0,0,0,0,5);
+	}
+	div.dropdownmenu div:hover
+	{
+	background-color:rgba(0,0,0,0.8);
+	}
+	li.dropdown:hover .dropdownmenu 
+	{
+	display: block;
+	}
+	h1
+	{
+	font-size: 350%;
+	font-family: headerf;
+	vertical-align: bottom;
+	margin-top: 1.5%; 
+	margin-bottom: 0;
+	color: #e6b800;
+	}
+	h2
+	{
+	font-size: 22px;
+	font-family: navf;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 0; 
+	margin-bottom: 5%;
+	}
+	.sportovi:hover
+	{
+	border-bottom: none;
+	border-top: 4px solid orange;
+	}
+	.drop:hover
+	{
+	border: 0;
+	background: none;
+	}
+	.drop1
+	{
+	border: 0;
+	}
+	.drop1:hover
+	{
+	background: black;
+	opacity: 0.8;
+	}
+	.Slides
+	{
+	display:none
+	}
+    .mySlides 
+	{
+	display:none
+	}
+    .w3-left, .w3-right, .w3-badge 
+	{
+	cursor:pointer
+	}
+	.w3-badge 
+	{
+	height:13px;width:13px;padding:0
+	}
+	.center 
+	{
+    margin: auto;
+    width: 50%;
+	}
+	.prostor
+	{
+	border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+	text-align: center; 
+	width: 95%; 
+	color: white;
+	opacity: 5;
+	font-size: 125%;
+	background: #7E8752;
+	margin: 2%;
+	background: rgba(0, 0, 0, 0.5);
+	font-family: navf;
+	}
+	#k
+	{
+	text-align: center;
+    color: white;
+	margin-right: 1px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+	transition: border-width 0.3s;
+	}
+	.search:hover ~ #image, #image:hover
+	{
+	display: inline;
+	}
+	.search
+	{
+	visibility: hidden;
+	font-color: black;
+	width: 0%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: visibility 0.4s, opacity 0.5s, width 0.4s ease-in-out;
+	opacity: 0;
+	z-index: -1;
+    }
+	#k:hover ~ .search, .search:hover 
+	{
+	width: 30%; 
+	opacity: 0.5;
+	visibility: visible;
+	}
+	.reklama1
+	{
+	padding: 0;
+	color: white;
+	text-align: center;
+   	margin:0;
+	width: 789px;
+	height: 105px;
+	margin-bottom: 1.5%;
+	font-size: 150%;
+	margin-top:1%;
+	background: rgba(255, 0, 0, 0.5)
+	}
+	.reklama
+	{
+	padding: 0;
+	color: white;
+	text-align: center;
+   	margin:0;
+	width: 790px;
+	height: 105px;
+	margin-top:-5%;
+	margin-bottom: 1.5%;
+	font-size: 150%;
+	background: rgba(255, 0, 0, 0.5)
+	}
+	.img
+	{
+    width: 24px;
+    height: 24px;
+    }
+	.p
+	{
+	position: relative;
+	}
+	#menu
+	{
+    text-align:right;
+    }
+	#bg
+	{
+	width: 100%; 
+	height: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	}
+	@font-face
+	{
+	font-family: headerf;
+	src: url(fonts/SIFONN_PRO.otf);
+	}
+	@font-face
+	{
+	font-family: navf;
+	src: url(fonts/DroidSerif-Bold.ttf);
+	}
+	@font-face
+	{
+	font-family: descf;
+	src: url(fonts/BilboSwashCaps-Regular.ttf);
+	}
+	mark
+	{
+    padding: 0;
+    }
+	</style>
+   </head>
+   
+<body background="img/artsfon.com-69520.jpg"  id="bg" >
+<!--Navbar-->
+<div id="menu" style="width: 100%; height: 100%; color: white; padding: 5px; display: block;">
+<!--Logo-->
+<a href="index.html"><img src="img/logo.jpg" style="margin-left: 0.09%; margin-top: 0.09%;float: left;width: 120px;height:130px; clear: right;"></img></a>
+<ul>
+<div>      	  
+<b><li><a href="index.html">Pocetna</a></li>
+<li class="dropdown"><a class="drm">Sportovi</a>
+      <div class="dropdownmenu">
+       <div class="drop" style="padding: 10px;"><a href="kosarka.html">Kosarka</a></div>
+       <div style="padding: 10px;"><a href="#">Fudbal</a></div>
+       <div style="padding: 10px;"><a href="#">Rukomet</a></div>
+       <div style="padding: 10px;"><a href="#">Tenis</a></div>
+       <div style="padding: 10px;"><a href="#">Plivanje</a></div>
+       <div style="padding: 10px;"><a href="#">Atletika</a></div>
+      </div>
+</li>
+<li><a href="kontakt.html">Kontakt</a></li>
+<li><a href="onama.html">O nama</a></b></li>
+<li><a href="help.html"><img class="img" src="img/help.jpg"></a></li>
+
+<li id="k"><img class="img" src="img/search.jpg"></li>
+<input  class="search" name="query" onclick="upShow()" id="query" onmouseover="hover()" type="text" name="keyword" onkeypress="myShow()" placeholder="Search..">
+<input name="searchit" type="image" id="sch" value="Search" onClick="highlightSearch()" src="img/sch.jpg" style="width: 25px; height: 25px">
+</div></ul>
+</div>
+<!--Naslov-->
+
+<!--Reklama-->
+<div><center>
+<div style="text-align: center; margin-top: 1.8%; padding: 0; color: white; font-size: 125%">Mesto za reklamu!</div>
+<p class="reklama"><b><a style="text-decoration: none; color: white;" href="index.html">790 x 105px</b></a></p>
+</center></div>
+
+<div id="searchtext">
+<!--pisanje-->
+<div>
+<header>
+<h1>Milos Teodosic</h1>
+
+<h2 style="text-align: left;font-size: 25px;"><p><b style="color: #e6b800;">Milos</b> je vodeci CSKA u pobedu protiv</p>
+<p><b>Baskonije zabelezio<b style="color: white;"> svoj</b> neverovatni rekord sa </b><b style="color: #e6b800;">indeksom 43</b>!</p></h2>
+</header>
+
+<p style="color: white; font-size: 17px;">Kapiten reprezentacije Srbije,<b style="color: #e6b800;"> Milos</b>, protiv Baskonije</p>
+<p style="color: white; font-size: 17px;">odigrao je mec za pamcenje! Zavrsio je mec sa cak<b style="color: #e6b800;"> 34 postignuta poena i 5 trojki</b> iz 6 pokusaja!</p>
+<p style="color: white; font-size: 17px;">Osim postignutog indexa 43, Teo se priblizio evropskom rekordu po broju<b style="color: #e6b800;"> asistencijama</b> koji</p>
+<p style="color: white; font-size: 17px;">zasad' drzi penzionisani igrac Dimitris Dijamantidis<b style="color: #e6b800;"> (1255)</b>,a iza njega je igrac Olimpijakosa Vasilis Spanulis</p>
+<p style="color: white; font-size: 17px;">sa 1015 asistencija,<b style="color: #e6b800;"> samo 12 asistencija ispred Milosa</b> koji je u mecu protiv Baskonije</p>
+<p style="color: white; font-size: 17px;">postigao svoju<b style="color: #e6b800;">1003.</b>asistenciju!</p><br/>
+
+<p style="color: white; font-size: 17px;">Video od <b>YouTube</b></p>
+</div>
+<iframe width="800" height="580"
+src="https://www.youtube.com/embed/mmWHYSJ5PM0">
+</iframe>
+<!--jsHover-->
+<script>
+function hover()
+{
+document.getElementById("search").style.opacity = "0.5";
+document.getElementById("search").style.visibility = "visible";
+document.getElementById("search").style.width = "30%";
+}
+</script>
+<!--jsShow-->
+<script>
+function upShow()
+{
+document.getElementById("sch").style.display = "inline";
+}
+function unShow()
+{
+document.getElementById("sch").style.display = "none";
+}
+function myShow()
+{
+document.getElementById("sch").style.display = "inline";
+}
+</script>
+<!--jsHighlight-->
+<script>
+function highlightSearch() {
+    var text = document.getElementById("query").value;
+    var query = new RegExp("(\\b" + text + "\\b)", "gim");
+    var e = document.getElementById("searchtext").innerHTML;
+    var enew = e.replace(/(<span>|<\/span>)/igm, "");
+    document.getElementById("searchtext").innerHTML = enew;
+    var newe = enew.replace(query, "<span>$1</span>");
+    document.getElementById("searchtext").innerHTML = newe;
+    document.getElementById("sch").style.display = "none";
+}
+</script>
+
+</body>
+</html>

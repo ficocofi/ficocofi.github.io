@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Neverovatni kosarkaski rekordi!">
+    <meta name="author" content="Filip Tunguz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+	<link rel="shortcut icon" href="http://www.iconj.com/ico/1/n/1nu3mycg0c.ico" type="image/x-icon" />
+    <title>Kosarka</title>
+	<style>
+	.kolina3:hover > .overlay
+	{
+	visibility: visible;
+	cursor: pointer;
+	}
+	.zajedno
+	{
+	width: 1260px;
+	overflow: hidden;	
+	}
+	.kolina2:hover > .overlay {
+    visibility: visible;
+	cursor: pointer;
+	}
+	.kolina2
+	{
+	background: url(img/nj.jpg);
+	width: 615px;
+    height: 440px;
+    position: relative;
+	border: 6px solid #e6b800;
+	margin-right: 0.5%;
+	margin-left: 0%;
+	margin-top: 1.5%;
+	float: right;
+	}
+	.kolina3
+	{
+	background: url(img/nj.jpg);
+	width: 615px;
+    height: 440px;
+    position: relative;
+	border: 6px solid #e6b800;
+	margin-left: 0.5%;
+	margin-top: 1.5%;
+	float: left;
+	}
+	div.rw:hover > .overlay
+	{
+    visibility: visible;
+	cursor: pointer;
+	}
+	.rw
+	{
+	background: url(img/b.jpg);
+	width: auto;
+    height: auto;
+    position: relative;
+	border: 6px solid #e6b800;
+	float: right;
+	margin-right: 1%;
+	margin-left: 0%;
+	margin-bottom: 1%;
+	}
+	.tr1:hover > .overlay
+	{
+    visibility: visible;
+	cursor: pointer;
+	}
+	.tr1
+	{
+	background: url(img/lebron.jpg);
+	background-size: cover;
+	width: 250px;
+    height: 187px;
+    position: relative;
+	border: 6px solid #e6b800;
+    margin-right: 1.5%;
+	float: right;
+	margin-left: 1.5%;
+	margin-bottom: 1%;
+	}
+	.kolina1:hover > .overlay {
+    visibility: visible;
+	cursor: pointer;
+	}
+	.kolina1
+	{
+	background: url(img/nj.jpg);
+	width: 520px;
+    height: 390px;
+    position: relative;
+	border: 6px solid #e6b800;
+	float: right;
+	clear: both;
+	margin-right: 1%;
+	}
+	.tb:hover > .overlay
+	{
+    visibility: visible;
+	cursor: pointer;
+	}
+	.kolina
+	{
+	background: url(img/nj.jpg);
+	width: 520px;
+    height: 390px;
+    position: relative;
+	border: 6px solid #e6b800;
+	float: left;
+	clear: both;
+	margin-left: 1.5%;
+	}
+	.tb
+	{
+	background: url(img/b.jpg);
+	width: auto;
+    height: auto;
+    position: relative;
+	border: 6px solid #e6b800;
+	float: left;
+	margin-right: 0;
+	margin-left:1.5%;
+	margin-bottom: 1%;
+	}
+	.tr:hover > .overlay
+	{
+    visibility: visible;
+	cursor: pointer;
+	}
+	.tr
+	{
+	background: url(img/teo.jpg);
+	width: 250px;
+    height: 187px;
+    position: relative;
+	border: 6px solid #e6b800;
+    margin-right: 1%;
+	float: left;
+	margin-left: 1.5%;
+	margin-bottom: 1%;
+	}
+	.overlay1
+	{
+	visibility: hidden;
+	width:100%;
+    height:100%;
+    position:absolute;
+    background-color: rgba(0, 0, 0, .5);
+    }
+	.overlay
+	{
+	visibility: hidden;
+	width:100%;
+    height:100%;
+    position:absolute;
+    background-color: rgba(0, 0, 0, .5);
+    }
+	.kolina:hover > .overlay {
+    visibility: visible;
+	cursor: pointer;
+	}
+	.buttons
+	{
+	color: transparent;
+	padding-left: 18px;
+	background-color: rgba(255, 255, 255, 0.4);
+	}
+	.buttons:hover
+	{
+	background-color: rgba(255, 255, 255, 0.7);
+	}
+	mark
+	{
+	color: black;
+	background-color: white;
+	border-radius: 6px;
+	}
+	#sch
+	{
+	position: absolute;
+	margin-top: 11.5px;
+	margin-left: -50px;
+	z-index: 1;
+	display: none;
+	}
+	#searchtext span 
+	{
+    background-color:#FF9;
+    color:#555;
+    }
+	ul li a:hover
+	{
+	border-bottom: 4px solid orange;
+	border-top: 4px solid orange;
+	}
+	ul 
+	{
+	list-style-type: none;	
+	overflow: hidden;
+	padding: 18px;	
+	padding-right: 5px;
+	width: 70%;
+	margin-top: 5px;
+	margin-left: 26%;
+	margin-right: 1px;
+	}
+	li
+	{
+	font-size: 105%;
+	font-family: navf;
+	display:inline-block;
+	}
+	a
+	{
+	text-decoration: none;
+	transition: 300ms ease-out;
+	padding-bottom: 9px;	
+	padding-top: 9px;
+	}
+	ul li
+	{
+	text-align: center;
+    color: white;
+	margin-right: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+	transition: 300ms ease-out;
+	}
+	div.dropdownmenu a 
+	{
+	font-family: navf;
+	font-size: 15px;
+	width:100%;
+	color: white;
+	opacity: 1;
+	text-decoration: none;
+	text-align: center;
+	border: 0;
+	}
+	.dropdownmenu
+	{
+	margin-top: 6.5px;
+	display: none;
+	position: absolute;
+	width: 200px;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	}
+	li.dropdown a:hover, div.dropdownmenu:hover .drm
+	{
+	border-top: 4px solid orange;
+	border-bottom: 0;
+	background-color:rgba(0,0,0,0.5)
+	}
+	div.dropdownmenu a:hover
+	{
+	border-top:0;
+	}
+	.dropdownmenu div:hover
+	{
+	background-color:rgba(0,0,0,0,5);
+	}
+	div.dropdownmenu div:hover
+	{
+	background-color:rgba(0,0,0,0.8);
+	}
+	li.dropdown:hover .dropdownmenu 
+	{
+	display: block;
+	}
+	h1
+	{
+	font-size: 350%;
+	font-family: headerf;
+	vertical-align: bottom;
+	margin-top: 1.5%; 
+	margin-bottom: 0;
+	color: #e6b800;
+	}
+	h2
+	{
+	font-size: 130%;
+	font-family: navf;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 0; 
+	margin-bottom: 5%;
+	line-height: 5px;
+	}
+	.sportovi:hover
+	{
+	border-bottom: none;
+	border-top: 4px solid orange;
+	}
+	.drop:hover
+	{
+	border: 0;
+	background: none;
+	}
+	.drop1
+	{
+	border: 0;
+	}
+	.drop1:hover
+	{
+	background: black;
+	opacity: 0.8;
+	}
+	.Slides
+	{
+	display:none
+	}
+    .mySlides 
+	{
+	display:none
+	}
+    .w3-left, .w3-right, .w3-badge 
+	{
+	cursor:pointer
+	}
+	.w3-badge 
+	{
+	height:13px;width:13px;padding:0
+	}
+	.center 
+	{
+    margin: auto;
+    width: 50%;
+	}
+	.prostor
+	{
+	border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+	text-align: center; 
+	width: 95%; 
+	color: white;
+	opacity: 5;
+	font-size: 125%;
+	background: #7E8752;
+	margin: 2%;
+	background: rgba(0, 0, 0, 0.5);
+	font-family: navf;
+	}
+	#k
+	{
+	text-align: center;
+    color: white;
+	margin-right: 1px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+	transition: border-width 0.3s;
+	}
+	.search:hover ~ #image, #image:hover
+	{
+	display: inline;
+	}
+	.search
+	{
+	visibility: hidden;
+	font-color: black;
+	width: 0%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: visibility 0.4s, opacity 0.5s, width 0.4s ease-in-out;
+	opacity: 0;
+	z-index: -1;
+    }
+	#k:hover ~ .search, .search:hover 
+	{
+	width: 30%; 
+	opacity: 0.5;
+	visibility: visible;
+	}
+	.reklama2
+	{
+	padding: 0;
+	color: white;
+	text-align: center;
+   	margin:0;
+	position: relative;
+	width: 520px;
+	height: 105px;
+	margin-bottom: 1.5%;
+	font-size: 150%;
+	margin-top: 1%;
+	margin-right: 1%;
+	float: right;
+	background: rgba(255, 0, 0, 0.5)
+	}
+	.reklama1
+	{
+	padding: 0;
+	color: white;
+	text-align: center;
+   	margin:0;
+	width: 520px;
+	height: 105px;
+	margin-bottom: 1.5%;
+	font-size: 150%;
+	margin-top:1%;
+	margin-left: 1.5%;
+	float: left;
+	background: rgba(255, 0, 0, 0.5)
+	}
+	.reklama
+	{
+	padding: 0;
+	color: white;
+	text-align: center;
+   	margin:0;
+	width: 790px;
+	height: 105px;
+	margin-top:-5%;
+	margin-bottom: 1.5%;
+	font-size: 150%;
+	background: rgba(255, 0, 0, 0.5)
+	}
+	.img
+	{
+    width: 24px;
+    height: 24px;
+    }
+	.c
+	{
+	text-align: center;
+	
+	}
+	.p
+	{
+	position: relative;
+	}
+	#menu
+	{
+	text-align: right;
+	float: right;
+    }
+	#bg
+	{
+	width: 100%; 
+	height: 100%;
+	background-repeat:no-repeat;
+    background-size: cover;
+	}
+	@font-face
+	{
+	font-family: headerf;
+	src: url(fonts/SIFONN_PRO.otf);
+	}
+	@font-face
+	{
+	font-family: navf;
+	src: url(fonts/DroidSerif-Bold.ttf);
+	}
+	@font-face
+	{
+	font-family: descf;
+	src: url(fonts/BilboSwashCaps-Regular.ttf);
+	}
+	mark
+	{
+    padding: 0;
+    }
+	.predji:hover > .overlay
+	{
+	visibility: visible;
+	cursor: pointer;
+	}
+	</style>
+   </head>
+   
+<body background="img/bg1.jpg" id="bg" >
+<center>
+<!--Navbar-->
+<div id="menu" style="width: 100%; height: 100%; color: white; padding: 5px; display: block;">
+<!--Logo-->
+<a href="index.html"><img src="img/logo.jpg" style="margin-left: 0.09%; margin-top: 0.09%;float: left;width: 120px;height:130px; clear: right;"></img></a>
+<ul>
+<div>      	  
+<b><li><a href="index.html">Pocetna</a></li>
+<li class="dropdown"><a class="drm">Sportovi</a>
+      <div class="dropdownmenu">
+       <div class="drop" style="padding: 10px;"><a href="kosarka.html">Kosarka</a></div>
+       <div style="padding: 10px;"><a href="#">Fudbal</a></div>
+       <div style="padding: 10px;"><a href="#">Rukomet</a></div>
+       <div style="padding: 10px;"><a href="#">Tenis</a></div>
+       <div style="padding: 10px;"><a href="#">Plivanje</a></div>
+       <div style="padding: 10px;"><a href="#">Atletika</a></div>
+      </div>
+</li>
+<li><a href="kontakt.html">Kontakt</a></li>
+<li><a href="onama.html">O nama</a></b></li>
+<li><a href="help.html"><img class="img" src="img/help.jpg"></a></li>
+
+<li id="k"><img class="img" src="img/search.jpg"></li>
+<input  class="search" name="query" onclick="upShow()" id="query" onmouseover="hover()" type="text" name="keyword" onkeypress="myShow()" placeholder="Search..">
+<input name="searchit" type="image" id="sch" value="Search" onClick="highlightSearch()" src="img/sch.jpg" style="width: 25px; height: 25px">
+</div></ul>
+</div>
+<!--Slideshow-->
+<div>
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: http://www.jssor.com -->
+    <!-- This code works without jquery library. -->
+    <script src="js/jssor.slider-22.2.11.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider loading skin oval css */
+
+        .jssorl-oval img {
+            animation-name: jssorl-oval;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-oval {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        .jssora22l.jssora22lds      (disabled)
+        .jssora22r.jssora22rds      (disabled)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+        .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
+        .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
+    </style>
+    <div id="jssor_1" style="position:relative; margin-right: 2%; top:0px;left:-5px;width:1500px;height:600px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-oval" style="position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="position:absolute;top:50%;width:38px;height:38px;" src="img/oval.gif" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1500px;height:600px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="image/android.jpg" />
+                <div style="position:absolute;top:400px;left:450px;width:600px;height:120px;z-index:0;background-color:rgba(0,0,0,0.5);">
+                    <div style="position:absolute;top:15px;left:15px;width:500px;height:40px;z-index:0;font-size:30px;color:#ffffff;line-height:40px;">Build slider with anything</div>
+                </div>                
+            </div>
+            <div>
+                <img data-u="image" src="image/windows.jpg" />
+                <div style="position:absolute;top:400px;left:450px;width:600px;height:120px;z-index:0;background-color:rgba(0,0,0,0.5);">
+                    <div style="position:absolute;top:15px;left:15px;width:500px;height:40px;z-index:0;font-size:30px;color:#ffffff;line-height:40px;">Build slider with anything</div>
+                </div>     
+            </div>
+            <div class="predji">
+                <img data-u="image" src="image/mac.jpg" />
+				<div class="overlay" style="color: white;font-family: headerf;font-size: 50px" onclick="window.location='mj.html'"><div><center><br/><br/><br/><b>POGLEDAJ</b><b/></center></div></div>
+                  <div style="text-align: left;position:absolute;left: 20px; top: 320px;width:500px;height:40px;z-index:0;font-size:40px;line-height:40px;"><b style="color: #e6b800;">Michael Jordan</b></div>
+				  <div style="text-align: left;position:absolute;left: 20px; top: 340px;width:500px;height:40px;z-index:0;font-size:25px;line-height:12px;"><br/><br/><p><br/><b style="color: white;">Covek koji je sa svojom 21</p>
+				  <p><b style="color: white;">godinom profesionalne NBA </p>
+				  <p><b style="color: white;">karijere postigao ne dostizan</p>
+				  <p><b style="color: white;">broj rekorda!</div></p>
+
+            </div>
+        </div>
+        </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+</div>
+<!--Naslov-->
+
+<div id="searchtext">
+<header>
+<h1 class="c">Kosarka</h1>
+
+<h2><p><b>Kosarka</b> je timski sport sa najvise<b> poena</b>,</p>
+<p><b>asistencija</b> i naravno <b style="color: #e6b800;">rekorda!</b></p></h2>
+</header>
+<!--Reklama-->
+<div><center>
+<div style="text-align: center; margin-top: 1.8%; padding: 0; color: white; font-size: 125%">Mesto za reklamu!</div>
+<p class="reklama"><b><a style="text-decoration: none; color: white;" href="index.html">790 x 105px</b></a></p>
+</center></div>
+
+<hr>
+<br/>
+<br/>
+<br/>
+<!--Donji deo 1/2-->
+<div>
+<div class="tb" width="260px" height="200px"><div class="overlay" style="color: white;font-size: 20px" onclick="window.location='rw.html'"><div><center><br/><br/><br/><b>Pogledaj<b/><center></div></div>
+<div id="searchtext">
+<b><p style="font-family: headerf; color: white; margin-right: 59%; font-size: 18px">AMERIKA</p>
+</div>
+<p style="text-align:left;margin-top:13%;color: #e6b800;margin-left:1%;margin-right: 63%; font-size: 15px; line-height: 0px">Westbrook</p></b>
+<p style="text-align:left;margin-top:0%;margin-left:1%;margin-right:63%;color: white; font-size: 12px">West u svom stilu do novih rekorda!</p>
+</div>
+<div width="260px" height="200px">
+<div class="tr"><div class="overlay" style="color: white;font-size: 20px" onclick="window.location='mt.html'"><div><center><br/><br/><br/><b>Pogledaj<b/><center></div></div>
+<div id="searchtext">
+<b><p style="font-family: headerf; color: white; margin-right: 59%; font-size: 18px">SRBIJA</p>
+</div>
+<p style="text-align:left;margin-top:13%;color: #e6b800;margin-left:1%;margin-right: 63%; font-size: 15px; line-height: 0px">Teodosic</p></b>
+<p style="text-align:left;margin-top:0%;margin-left:1%;margin-right:63%;color: white; font-size: 12px">Nas Teo baca magiju po parketu!</p>
+</div>
+</div>
+
+<div class="kolina"><div class="overlay" style="color: white;font-size: 30px" onclick="window.location='nj.html'"><div><center><br/><br/><br/><br/><b>Pogledaj</b><b/><center></div></div>
+<div id="searchtext">
+<b><p style="font-family: headerf; color: white; margin-right: 63%; font-size: 35px">SRBIJA</p>
+</div>
+<p style="text-align:left;margin-top:22%;color: #e6b800; margin-left: 1%; font-size: 20px; line-height: 0px">Nikola Jokic</p></b>
+<p style="text-align:left;margin-top:0%;margin-right:62%;margin-left:2%;margin-left:1%;color: white; font-size: 16px">Mladi somborcanin, ujedno i srpski reprezentativac obara rekord star 40 godina!</p>
+</div>
+</div>
+<p style="clear: both;">
+<div>
+</b>
+</b>
+<!--Reklama-->
+<div>
+<div>
+<p class="reklama1"><b><a style="text-decoration: none; color: white;" href="index.html">789 x 105px</b></a></p>
+</div>
+<!--DRUGI DEO-->
+<div width="260px" height="200px">
+<div class="rw">
+<div class="overlay" style="color: white;font-size: 20px" onclick="window.location='rw.html'">
+<div><center><br/><br/><br/><b>Pogledaj<b/></center></div></div>
+<div id="searchtext">
+<b><p style="font-family: headerf; color: white; margin-right: 59%; font-size: 18px">AMERIKA</p>
+</div>
+<p style="text-align:left;margin-top:13%;color: #e6b800;margin-left:1%;margin-right: 63%; font-size: 15px; line-height: 0px">Westbrook</p></b>
+<p style="text-align:left;margin-top:0%;margin-left:1%;margin-right:63%;color: white; font-size: 12px">West u svom stilu do novih rekorda!</p>
+</div>
+</div>
+<div width="260px" height="200px">
+<div class="tr1">
+<div class="overlay" style="color: white;font-size: 20px" onclick="window.location='lj.html'">
+<div><center><br/><br/><br/><b>Pogledaj<b/></center></div></div>
+<b><p style="font-family: headerf; color: white; margin-right: 59%; font-size: 18px">AMERIKA</p>
+<p style="text-align:left;margin-top:13%;color: #e6b800;margin-left:1%;margin-right: 63%; font-size: 15px; line-height: 0px">Lebron</p></b>
+<p style="text-align:left;margin-top:0%;margin-left:1%;margin-right:63%;color: white; font-size: 12px">Sjajni James belezi neverovatne rekorde!</p>
+</div>
+</div>
+
+<div class="kolina1"><div class="overlay" style="color: white;font-size: 30px" onclick="window.location='nj.html'"><div><center><br/><br/><br/><br/><b>Pogledaj</b><b/><center></div></div>
+<div id="searchtext">
+<b><p style="font-family: headerf; color: white; margin-right: 63%; font-size: 35px">SRBIJA</p>
+</div>
+<p style="text-align:left;margin-top:22%;color: #e6b800; margin-left: 1%; font-size: 20px; line-height: 0px">Nikola Jokic</p></b>
+<p style="text-align:left;margin-top:0%;margin-right:62%;margin-left:2%;margin-left:1%;color: white; font-size: 16px">Mladi somborcanin, ujedno i srpski reprezentativac obara rekord star 40 godina!</p>
+</div>
+</center>
+<p style="clear: both;">
+</b>
+</b>
+<!--Reklama-->
+<div>
+<p class="reklama2"><b><a style="text-decoration: none; color: white;" href="index.html">789 x 105px</b></a></p>
+</div>
+</div>
+<br/><br/><br/><br/><br/><br/>
+<hr/>
+<!--Donji deo 2/2-->
+<div class="zajedno">
+<div>
+<div class="kolina3">
+<div class="overlay" style="color: white;font-size: 30px"><div><center><br/><br/><br/><br/><b>Pogledaj</b><b/></center></div></div>
+<b><p style="font-family: headerf; color: white; margin-right: 63%; font-size: 35px" onclick="window.location='.html'">SRBIJA</p>
+<p style="text-align:left;margin-top:22%;color: #e6b800; margin-left: 1%; font-size: 20px; line-height: 0px">Nikola Jokic</p></b>
+<p style="text-align:left;margin-top:0%;margin-right:62%;margin-left:2%;margin-left:1%;color: white; font-size: 16px">Mladi somborcanin, ujedno i srpski reprezentativac obara rekord star 40 godina!</p>
+</div>
+</div>
+<div>
+<div class="kolina2">
+<div class="overlay" style="color: white;font-size: 30px"><div><center><br/><br/><br/><br/><b>Pogledaj</b><b/></center></div></div>
+<b><p style="font-family: headerf; color: white; margin-right: 63%; font-size: 35px" onclick="window.location='.html'">SRBIJA</p>
+<p style="text-align:left;margin-top:22%;color: #e6b800; margin-left: 1%; font-size: 20px; line-height: 0px">Nikola Jokic</p></b>
+<p style="text-align:left;margin-top:0%;margin-right:62%;margin-left:2%;margin-left:1%;color: white; font-size: 16px">Mladi somborcanin, ujedno i srpski reprezentativac obara rekord star 40 godina!</p>
+</div>
+</div>
+</div>
+<br/><hr/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!--jsHover-->
+<script>
+function hover()
+{
+var element = document.getElementById('search');
+element.style.opacity = "0.5";
+element.style.filter  = 'alpha(opacity=50)'; 
+document.getElementById("search").style.visibility = "visible";
+document.getElementById("search").style.width = "30%";
+}
+</script>
+<!--jsShow-->
+<script>
+function upShow()
+{
+document.getElementById("sch").style.display = "inline";
+}
+function unShow()
+{
+document.getElementById("sch").style.display = "none";
+}
+function myShow()
+{
+document.getElementById("sch").style.display = "inline";
+}
+</script>
+<!--jsHighlight-->
+<script>
+function highlightSearch() {
+    var text = document.getElementById("query").value;
+    var query = new RegExp("(\\b" + text + "\\b)", "gim");
+    var e = document.getElementById("searchtext").innerHTML;
+    var enew = e.replace(/(<span>|<\/span>)/igm, "");
+    document.getElementById("searchtext").innerHTML = enew;
+    var newe = enew.replace(query, "<span>$1</span>");
+    document.getElementById("searchtext").innerHTML = newe;
+    document.getElementById("sch").style.display = "none";
+}
+</script>
+</center>
+</body>
+</html>

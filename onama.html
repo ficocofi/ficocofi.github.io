@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videcemo">
+    <meta name="author" content="Filip Cofi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+
+    <title>Fico</title>
+    <style>
+	.prostor
+	{
+	border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+	text-align: center; 
+	width: 95%; 
+	color: white;
+	opacity: 0.8;
+	font-size: 125%;
+	background: #7E8752;
+	padding-left: 2%;
+	margin-left: 1%;
+	background: rgba(0, 0, 0, 0.5);
+	}
+	#k
+	{
+	text-align: center;
+    color: white;
+	margin-right: 1px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+	transition: border-width 0.3s;
+	}
+	#search
+	{
+	visibility: hidden;
+	font-color: black;
+	width: 0%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: visibility 0.4s, opacity 0.5s, width 0.4s ease-in-out;
+	opacity: 0;
+    }
+	#k:hover ~ #search, #search:hover 
+	{
+	width: 30%; 
+	opacity: 0.5;
+	visibility: visible;
+	}
+	p
+	{
+	padding: 0;
+	color: white;
+	text-align: center;
+   	margin: 0;
+	margin-left: 31%;
+	width: 500px;
+	height: 75px;
+	margin-bottom: 1.5%;
+	font-size: 150%;
+	background: rgba(0, 0, 0, 0.5)
+	}
+	h1
+	{
+	font-size: 500%;
+	font-family: headerf;
+	vertical-align: bottom;
+	margin-top: 12%; 
+	margin-bottom: 0;
+	}
+	h2
+	{
+	font-size: 250%;
+	font-family: descf;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 0; 
+	margin-bottom: 9%;
+	}
+	ul 
+	{
+	list-style-type: none;	
+	overflow: hidden;
+	padding: 18px;	
+	padding-right: 5px;
+	width: 70%;
+	margin-left: 26%;
+	margin-right: 1px;
+	}
+	.anim
+	{
+	text-align: center;
+    color: white;
+	margin-right: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+	transition: 300ms ease-out;
+	}
+	li
+	{
+	font-family: navf;
+	display:inline-block;
+	}
+	.anim:hover
+	{
+	 border-bottom: 4px solid orange;
+	}
+	.img
+	{
+    width: 24px;
+    height: 24px;
+    }
+	.c
+	{
+	text-align: center;
+	}
+	.p
+	{
+	position: relative;
+	}
+	#menu
+	{
+    text-align:right;
+    }
+	#bg
+	{
+	min-width: 100%; 
+	min-height: 100%;
+	background-repeat: no-repeat;
+	position: fixed; 
+	}
+	@font-face
+	{
+	font-family: headerf;
+	src: url(fonts/SIFONN_PRO.otf);
+	}
+	@font-face
+	{
+	font-family: navf;
+	src: url(fonts/DroidSerif-Bold.ttf);
+	}
+	@font-face
+	{
+	font-family: descf;
+	src: url(fonts/BilboSwashCaps-Regular.ttf);
+	}
+	
+	</style>
+   </head>
+   
+<body background="img/bg.jpg" id="bg">
+
+<div id="menu" style="width: 100%; height: 100%; color: white; padding: 5px; display: block;">
+
+<ul><header>
+<div>      	  
+<b><li><a class="anim" href="index.html">Pocetna</a></li>
+<li><a class="anim" href="sportovi.html">Sportovi</a></li>
+<li><a class="anim" href="kontakt.html">Kontakt</a></li>
+<li><a class="anim" href="onama.html">O nama</a></b></li>
+<li><a class="anim" href="help.html"><img class="img" src="img/help.png"></a></li>
+<li id="k"><img class="img" src="img/search.svg"></li>
+<input id="search" type="text" placeholder="Search..">
+</div></ul>
